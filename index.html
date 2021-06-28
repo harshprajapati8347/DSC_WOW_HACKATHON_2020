@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MySuru</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT CSS-->
+    <link rel="icon" href="./assets/images/logo/mysuru.png" type="image/icon type">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link type="text/css" rel="stylesheet" href="assets/font/font-icon/font-awesome/css/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="assets/font/font-icon/font-flaticon/flaticon.css">
+    <!-- LIBRARY CSS-->
+    <link type="text/css" rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/animate/animate.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/slick-slider/slick.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/slick-slider/slick-theme.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/selectbox/css/jquery.selectbox.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/please-wait/please-wait.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox8cbb.css?v=2.1.5">
+    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox-buttons3447.css?v=1.0.5">
+    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox-thumbsf2ad.css?v=1.0.7">
+    <!-- STYLE CSS-->
+    <link type="text/css" rel="stylesheet" href="assets/css/layout.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/components.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/responsive.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/color.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/contact.css">
+
+    <!--link(type="text/css", rel='stylesheet', href='assets/css/color-1/color-1.css', id="color-skins")-->
+    <link type="text/css" rel="stylesheet" href="#" id="color-skins">
+    <script src="assets/libs/jquery/jquery-2.2.3.min.js"></script>
+    <script src="assets/libs/js-cookie/js.cookie.js"></script>
+    <script>
+        if ((Cookies.get('color-skin') != undefined) && (Cookies.get('color-skin') != 'color-1')) {
+            $('#color-skins').attr('href', 'assets/css/' + Cookies.get('color-skin') + '/' + 'color.css');
+        }
+        else if ((Cookies.get('color-skin') == undefined) || (Cookies.get('color-skin') == 'color-1')) {
+            $('#color-skins').attr('href', 'assets/css/color-1/color.css');
+        }
+    </script>
+    <link type="text/css" rel="stylesheet" href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <!-- MENU MOBILE-->
+        <div class="wrapper-mobile-nav">
+
+            <div class="header-main">
+                <div class="menu-mobile">
+                    <ul class="nav-links nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="index.html" class="main-menu">
+                                <span class="text">Home</span>
+                            </a>
+
+                        </li>
+                        <li class="dropdown">
+                            <a href="tour-view.html" class="main-menu">
+                                <span class="text">Tour</span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="explore.html" class="main-menu">
+                                <span class="text">Explore</span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="covid19.html" class="main-menu">
+                                <span class="text">Covid-19</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- WRAPPER CONTENT-->
+        <div class="wrapper-content">
+            <!-- HEADER-->
+            <header>
+                <div class="bg-transparent header-01">
+
+                    <div class="header-main">
+                        <div class="container">
+                            <div class="header-main-wrapper">
+                                <div class="hamburger-menu">
+                                    <div class="hamburger-menu-wrapper">
+                                        <div class="icons"></div>
+                                    </div>
+                                </div>
+                                <div class="navbar-header">
+                                    <div class="logo">
+                                        <a href="index.html" class="header-logo">
+                                            <img src="/assets/images/logo/logo-black-color-1.png" style="width: 0%;"
+                                                alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <nav class="navigation">
+                                    <ul class="nav-links nav navbar-nav">
+                                        <li class="dropdown ">
+                                            <a href="index.html" class="main-menu">
+                                                <span class="text icons-dropdown">Home</span>
+                                                <span class="icons-dropdown">
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="tour-view.html" class="main-menu">
+                                                <span class="text icons-dropdown">Tour</span>
+                                                <span class="icons-dropdown">
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="explore.html" class="main-menu">
+                                                <span class="text icons-dropdown">Explore</span>
+                                                <span class="icons-dropdown">
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="covid19.html" class="main-menu">
+                                                <span class="text">Covid-19</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- WRAPPER-->
+            <div id="wrapper-content">
+                <!-- MAIN CONTENT-->
+                <div class="main-content">
+                    <section class="page-banner homepage-default">
+                        <div class="container">
+
+                            <div class="homepage-banner-warpper">
+                                <div class="homepage-banner-content">
+                                    <div>
+                                        <a href="index.html" class="header-logo">
+                                            <img src="/assets/images/logo/Suru.png"
+                                                style="width: 20%;padding-top: 100px;" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="group-title">
+                                        <h1 class="title">Mysuru</h1>
+                                        <p class="text">Famously known as The City of Palaces
+                                            <span class="boder"></span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+
+                    </section>
+                    <section class="about-us layout-1 padding-top padding-bottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="group-title">
+                                        <div class="sub-title">
+                                            <p class="text">Top Places to Visit In Mysore</p>
+                                            <i class="icons flaticon-people"></i>
+                                        </div>
+                                        <h2 class="main-title">Mysore Tourism</h2>
+                                    </div>
+                                    <div class="about-us-wrapper">
+                                        <p class="text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                            ut labore et dolore magna aliqua. Ut eim ad minim veniam, quis nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex commodo consequat uisas aute
+                                            irure dolor ullamco laboris nisi in reprehenderit.Famously known as The City
+                                            of Palaces, it wouldn’t be wrong to say that Mysore, currently Mysuru, is
+                                            one of the most important places in the country regarding ancient reigns. It
+                                            is replete with the history of its dazzling royal heritage, intricate
+                                            architecture, its famed silk sarees, yoga, and sandalwood, to name just a
+                                            few. Located in the foothills of the Chamundi Hills, Mysore is the third
+                                            most populated city in Karnataka, and its rich heritage draws millions of
+                                            tourists all year round. The highlight is the majestic Mysore Palace, a
+                                            UNESCO World Heritage Site, which is a must-visit.
+                                        </p>
+                                        <div class="group-list">
+                                            <ul class="list-unstyled about-us-list">
+                                                <li>
+                                                    <p class="text">Mysore Palace</p>
+                                                </li>
+                                                <li>
+                                                    <p class="text">Brindavan Gardens</p>
+                                                </li>
+                                                <li>
+                                                    <p class="text">Somanathapura Temple</p>
+                                                </li>
+                                                <li>
+                                                    <p class="text">Mysore Zoo</p>
+                                                </li>
+                                            </ul>
+                                            <ul class="list-unstyled about-us-list">
+                                                <li>
+                                                    <p class="text">Chamundeshwari Temple</p>
+                                                </li>
+                                                <li>
+                                                    <p class="text">Shuka Vana</p>
+                                                </li>
+                                                <li>
+                                                    <p class="text">Bonsai Garden</p>
+                                                </li>
+                                                <li>
+                                                    <p class="text">Karanji Lake</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-5">
+                                    <div data-wow-delay="0.5s" class="about-us-image wow zoomIn">
+                                        <img src="/assets/images/homepage/one-state-many-world (1).jpg" alt=""
+                                            style="padding-top: 100px;" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="tours padding-top padding-bottom">
+                        <div class="container">
+                            <div class="tours-wrapper">
+                                <div class="group-title">
+                                    <div class="sub-title">
+                                        <p class="text">PACK AND GO</p>
+                                        <i class="icons flaticon-people"></i>
+                                    </div>
+                                    <h2 class="main-title">Top Places to Visit In Mysore</h2>
+                                </div>
+                                <div class="tours-content margin-top70">
+                                    <div class="tours-list">
+                                        <div class="tours-layout">
+                                            <div class="image-wrapper">
+                                                <a href="tour-view.html" class="link">
+                                                    <img src="assets/images/tours/Somnathpur.jpg" alt=""
+                                                        class="img-responsive">
+                                                </a>
+                                                <div class="title-wrapper">
+                                                    <a href="tour-view.html" class="title">Somanathapura Temple</a>
+                                                </div>
+                                            </div>
+                                            <div class="content-wrapper">
+
+                                                <div class="content">
+
+                                                    <p class="text">On the banks of Holy river Kaveri is a tiny tranquil
+                                                        town of Somanathapura. Here stands the finest and most exemplary
+                                                        monument of Hoysala architecture known as the famous Prasanna
+                                                        Chennakesava Temple or simply the Kesava Temple.
+                                                    </p>
+                                                    <div class="group-btn-tours">
+                                                        <a href="tour-view.html" class="btn">Visit</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tours-layout">
+                                            <div class="image-wrapper">
+                                                <a href="tour-view.html" class="link">
+                                                    <img src="assets/images/tours/Zoo.jpg" alt=""
+                                                        class="img-responsive">
+                                                </a>
+                                                <div class="title-wrapper">
+                                                    <a href="tour-view.html" class="title">Mysore Zoo</a>
+                                                </div>
+                                            </div>
+                                            <div class="content-wrapper">
+
+                                                <div class="content">
+
+                                                    <p class="text">Sri Chamarajendra Zoological Gardens, also known as
+                                                        the Mysore Zoo is one of the best zoological gardens in India.
+                                                        Maharaja Chamaraja Wodeyar established this Zoo in the year 1892
+                                                        for the Royals.It was handed over to the Department of Parks and
+                                                        Gardens of the State Govt.
+                                                    </p>
+                                                    <div class="group-btn-tours">
+                                                        <a href="tour-view.html" class="btn">Visit</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tours-layout">
+                                            <div class="image-wrapper">
+                                                <a href="tour-view.html" class="link">
+                                                    <img src="/assets/images/tours/Temple.png" alt=""
+                                                        class="img-responsive">
+                                                </a>
+                                                <div class="title-wrapper">
+                                                    <a href="tour-view.html" class="title">Chamundeshwari Temple</a>
+                                                </div>
+                                            </div>
+                                            <div class="content-wrapper">
+
+                                                <div class="content">
+
+                                                    <p class="text">The Chamundeshwari Temple is a traditional Hindu
+                                                        temple located on the eastern edge of Mysore at the height of
+                                                        1000ft on the Chamundi hills. Dedicated to and named after
+                                                        goddess Durga, the temple also has statues of Nandi and
+                                                        Mahishasura, the demon.
+                                                    </p>
+                                                    <div class="group-btn-tours">
+                                                        <a href="tour-view.html" class="btn">Visit</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="videos layout-1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="video-wrapper padding-top padding-bottom">
+                                        <h5 class="sub-title">it’s a
+                                            <strong>big world</strong> out there
+                                        </h5>
+                                        <h2 class="title">go explore</h2>
+                                        <div class="text">Mysore or Mysuru, is the third largest city in Karnataka. The
+                                            city was ruled by the Wodeyar dynasty and it is well known for the rich
+                                            architectural history, palaces, and beautiful gardens. It is located at the
+                                            bottom of the Chamundi Hills and is about 150 kms from Bangalore.</div>
+                                        <a href="tour-view.html" class="btn btn-maincolor">read more</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="video-thumbnail">
+                                        <div class="video-bg">
+                                            <img src="assets/images/background/Explore.jpg" alt=""
+                                                class="img-responsive">
+                                        </div>
+                                        <!-- <div class="video-button-play">
+                                            <i class="icons fa fa-play"></i>
+                                        </div> -->
+                                        <div class="video-button-close"></div>
+                                        <!-- <iframe width="560" height="315" src="https://youtu.be/qbcd8m8PE40"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen="allowfullscreen" class="video-embed"></iframe> -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="news padding-top padding-bottom">
+                        <div class="container">
+                            <div class="news-wrapper">
+                                <div class="group-title">
+                                    <div class="sub-title">
+                                        <p class="text">EXPLORATIONAL STORIES</p>
+                                        <i class="icons flaticon-people"></i>
+                                    </div>
+                                    <h2 class="main-title">Things to do in Mysore</h2>
+                                </div>
+                                <div class="news-content margin-top70">
+                                    <div class="news-list">
+                                        <div class="new-layout">
+                                            <div class="image-wrapper">
+                                                <a href="#" class="link">
+                                                    <img src="assets/images/homepage/Jaganmohan Palace.jpg" alt=""
+                                                        class="img-responsive">
+                                                </a>
+                                                <div class="description">Situated in the royal city of Mysore,...</div>
+                                            </div>
+                                            <div class="content-wrapper">
+                                                <a href="#" class="title">Jaganmohan Palace</a>
+                                                <ul class="info list-inline list-unstyled">
+                                                    <li>
+                                                        <a href="#" class="link">Weather : 24° C </a>
+                                                    </li>
+
+                                                </ul>
+                                                <p class="text">Situated in the royal city of Mysore, the Jaganmohan
+                                                    Palace is a spectacular edifice that has an illustrious history
+                                                    attached to its name.</p>
+                                                <p class="text">The Jaganmohan Palace was converted into a magnificent
+                                                    art gallery and today hosts some of the most exquisite pieces of
+                                                    artwork for the public to see.
+
+                                                    Jaganmohan Palace held an important position in the administrative
+                                                    and legislative affairs of Mysore for a long period.</p>
+                                                <a href="tour-view.html" class="btn btn-maincolor">read know</a>
+
+                                            </div>
+                                        </div>
+                                        <div class="new-layout">
+                                            <div class="image-wrapper">
+                                                <a href="#" class="link">
+                                                    <img src="assets/images/homepage/St.-Philominas.jpg" alt=""
+                                                        class="img-responsive">
+                                                </a>
+                                                <div class="description">The foundation for the church was laid in the
+                                                    year 1933 ...</div>
+                                            </div>
+                                            <div class="content-wrapper">
+                                                <a href="#" class="title">St. Philomena's Church</a>
+                                                <ul class="info list-inline list-unstyled">
+                                                    <li>
+                                                        <a href="#" class="link">Weather : 24° C</a>
+                                                    </li>
+
+                                                </ul>
+                                                <p class="text">Recognized as the second tallest church of Asia, St.
+                                                    Philomena's Church was constructed to pay tribute to the Catholic
+                                                    Saint and martyr of Roman Catholic Church, Saint Philomena.</p>
+                                                <p class="text">It is one of the most important historical sites in
+                                                    Mysore and is frequently visited by tourists from all over the
+                                                    country. Being one of the most distinctive landmarks of the city, it
+                                                    looks even more beautiful in the evening sky and is given religious
+                                                    importance having a Neo-Gothic style of architecture which makes it
+                                                    all the more famous amongst masses.</p>
+                                                <a href="tour-view.html" class="btn btn-maincolor">read know</a>
+
+                                            </div>
+                                        </div>
+                                        <div class="new-layout">
+                                            <div class="image-wrapper">
+                                                <a href="#" class="link">
+                                                    <img src="assets/images/homepage/karanji-lake-mysore.jpg" alt=""
+                                                        class="img-responsive">
+                                                </a>
+                                                <div class="description">Karanji lake is said to possess the largest
+                                                    aviary in the country....</div>
+                                            </div>
+                                            <div class="content-wrapper">
+                                                <a href="#" class="title">Karanji Lake</a>
+                                                <ul class="info list-inline list-unstyled">
+                                                    <li>
+                                                        <a href="#" class="link">Weather : 24° C</a>
+                                                    </li>
+
+                                                </ul>
+                                                <p class="text">Karanji Lake, also known as the fountain lake, is a
+                                                    popular picnic spot. Visitors are allowed to bring packed food, and
+                                                    there is a coffee shop as well.</p>
+                                                <p class="text">It is a beautiful place to explore the different species
+                                                    of birds as the lake exhibits as many as 147 species including
+                                                    herons, Asian openbill storks, cormorant, grey pelican, etc.
+
+                                                    The Karanji lake is said to possess the largest aviary in the
+                                                    country. Its set up cost was nearly 3.8 million, and it measures 20m
+                                                    in length, 50m in breadth and has a height of 60m.</p>
+                                                <a href="tour-view.html" class="btn btn-maincolor">read know</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="banner-sale-1">
+                        <div class="banner-left">
+                            <div class="title-box">
+                                <h1 class="title-overlay title-1 padding-top">Mysore</h1>
+                                <h2 class="title-overlay title-2"> Zoo</h2>
+
+                            </div>
+                        </div>
+                        <div class="banner-right">
+                            <div class="text-salebox">
+
+                                <div class="text-right">
+                                    <h5 class="title">Located near the palace in Mysore</h5>
+                                    <p class="text">The Zoological Garden covers an area of 157 acres.</p>
+                                    <div class="group-button">
+                                        <a href="tour-view.html" class="btn btn-maincolor">read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="a-fact padding-top padding-bottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="group-title">
+                                        <div class="sub-title">
+                                            <p class="text">PROUD MOMENT</p>
+                                            <i class="icons flaticon-people"></i>
+                                        </div>
+                                        <h2 class="main-title">Places To Visit in India</h2>
+                                    </div>
+                                    <div class="a-fact-wrapper">
+                                        <p class="text">The capital of India, Delhi is a cosmopolitan city with a
+                                            historic old Delhi and the modern New Delhi. </p>
+                                        <div class="a-fact-list">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <p class="text">Vadodara</p>
+                                                </li>
+                                                <li>
+                                                    <p class="text">Agra</p>
+                                                </li>
+                                                <li>
+                                                    <p class="text">Manali</p>
+                                                </li>
+                                                <li>
+                                                    <p class="text">Mysuru</p>
+                                                </li>
+                                                <li>
+                                                    <p class="text">Udaipur</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="btn btn-maincolor">read more</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="a-fact-image-wrapper">
+                                        <div class="a-fact-image">
+                                            <a href="#" class="icons icons-1">
+                                                <i class="fa fa-map-marker"></i>
+                                            </a>
+                                            <img src="assets/images/India/India.png" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="a-fact-image">
+                                            <a href="#" class="icons icons-2">
+                                                <i class="fa fa-map-marker"></i>
+                                            </a>
+                                            <img src="assets/images/India/India.png" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="a-fact-image">
+                                            <a href="#" class="icons icons-3">
+                                                <i class="fa fa-map-marker"></i>
+                                            </a>
+                                            <img src="assets/images/India/India.png" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="a-fact-image">
+                                            <a href="#" class="icons icons-4">
+                                                <i class="fa fa-map-marker"></i>
+                                            </a>
+                                            <img src="assets/images/India/India.png" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="a-fact-image">
+                                            <a href="#" class="icons icons-5">
+                                                <i class="fa fa-map-marker"></i>
+                                            </a>
+                                            <img src="assets/images/India/India.png" alt="" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+                <!-- BUTTON BACK TO TOP-->
+                <div id="back-top">
+                    <a href="#top" class="link">
+                        <i class="fa fa-angle-double-up"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- FOOTER-->
+            <footer>
+                <div class="footer-main padding-top padding-bottom">
+                    <div class="container">
+                        <div class="footer-main-wrapper">
+                            <a href="index.html" class="logo-footer">
+                                <img src="assets/images/logo/Suru.png" alt="" class="img-responsive" />
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="hyperlink">
+                    <div class="container">
+
+                        <div class="social-footer" style="padding-top: 20px;">
+                            <ul class="list-inline list-unstyled">
+                                <li>
+                                    <a href="#" class="link facebook">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link pinterest">
+                                        <i class="fa fa-pinterest-p"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link google">
+                                        <i class="fa fa-google"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="name-company"> Designed by <a
+                                href="https://www.linkedin.com/in/nand-patel-240876159/" target="_blank">Nand</a> & <a
+                                href="https://www.linkedin.com/in/harsh-prajapati-1780921aa/" target="_blank">Harsh</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- LIBRARY JS-->
+    <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/libs/detect-browser/browser.js"></script>
+    <script src="assets/libs/smooth-scroll/jquery-smoothscroll.js"></script>
+    <script src="assets/libs/wow-js/wow.min.js"></script>
+    <script src="assets/libs/slick-slider/slick.min.js"></script>
+    <script src="assets/libs/selectbox/js/jquery.selectbox-0.2.js"></script>
+    <script src="assets/libs/please-wait/please-wait.min.js"></script>
+    <script src="assets/libs/fancybox/js/jquery.fancybox.js"></script>
+    <script src="assets/libs/fancybox/js/jquery.fancybox-buttons.js"></script>
+    <script src="assets/libs/fancybox/js/jquery.fancybox-thumbs.js"></script>
+    <!--script(src="assets/libs/parallax/jquery.data-parallax.min.js")-->
+    <!-- MAIN JS-->
+    <script src="assets/js/main.js"></script>
+    <!-- LOADING JS FOR PAGE-->
+    <script src="assets/js/pages/home-page.js"></script>
+    <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        var logo_str = 'assets/images/logo/mysuruLanding.png';
+        if (Cookies.set('color-skin')) {
+            logo_str = 'assets/images/logo/logo-black-' + Cookies.set('color-skin') + '.png';
+        }
+        window.loading_screen = window.pleaseWait(
+            {
+                logo: logo_str,
+                backgroundColor: '#fff',
+                loadingHtml: "<div class='spinner sk-spinner-wave'><div class='rect1'></div><div class='rect2'></div><div class='rect3'></div><div class='rect4'></div><div class='rect5'></div></div>",
+            });
+    </script>
+
+
+</body>
+
+<!-- Mirrored from swlabs.co/exploore/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Dec 2020 05:48:33 GMT -->
+
+</html>

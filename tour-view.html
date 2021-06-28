@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MySuru | Tour</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/logo/mysuru.png" type="image/icon type">
+
+    <!-- FONT CSS-->
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link type="text/css" rel="stylesheet" href="assets/font/font-icon/font-awesome/css/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="assets/font/font-icon/font-flaticon/flaticon.css">
+    <!-- LIBRARY CSS-->
+    <link type="text/css" rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/animate/animate.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/slick-slider/slick.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/slick-slider/slick-theme.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/selectbox/css/jquery.selectbox.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/please-wait/please-wait.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox8cbb.css?v=2.1.5">
+    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox-buttons3447.css?v=1.0.5">
+    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox-thumbsf2ad.css?v=1.0.7">
+    <!-- STYLE CSS-->
+    <link type="text/css" rel="stylesheet" href="assets/css/layout.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/components.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/responsive.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/color.css">
+    <!--link(type="text/css", rel='stylesheet', href='assets/css/color-1/color-1.css', id="color-skins")-->
+    <link type="text/css" rel="stylesheet" href="#" id="color-skins">
+    <script src="assets/libs/jquery/jquery-2.2.3.min.js"></script>
+    <script src="assets/libs/js-cookie/js.cookie.js"></script>
+    <script>
+        if ((Cookies.get('color-skin') != undefined) && (Cookies.get('color-skin') != 'color-1')) {
+            $('#color-skins').attr('href', 'assets/css/' + Cookies.get('color-skin') + '/' + 'color.css');
+        }
+        else if ((Cookies.get('color-skin') == undefined) || (Cookies.get('color-skin') == 'color-1')) {
+            $('#color-skins').attr('href', 'assets/css/color-1/color.css');
+        }
+    </script>
+    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox8cbb.css?v=2.1.5">
+    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox-buttons3447.css?v=1.0.5">
+    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox-thumbsf2ad.css?v=1.0.7">
+    <link type="text/css" rel="stylesheet" href="assets/libs/mouse-direction-aware/jquery.directional-hover.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <!-- MENU MOBILE-->
+        <div class="wrapper-mobile-nav">
+
+            <div class="header-main">
+                <div class="menu-mobile">
+                    <ul class="nav-links nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="index.html" class="main-menu">
+                                <span class="text">Home</span>
+                            </a>
+
+                        </li>
+                        <li class="dropdown">
+                            <a href="tour-view.html" class="main-menu">
+                                <span class="text">Tour</span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="explore.html" class="main-menu">
+                                <span class="text">Explore</span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="covid19.html" class="main-menu">
+                                <span class="text">Covid-19</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- WRAPPER CONTENT-->
+        <div class="wrapper-content">
+            <!-- HEADER-->
+            <header>
+                <div class="bg-transparent header-01">
+
+                    <div class="header-main">
+                        <div class="container">
+                            <div class="header-main-wrapper">
+                                <div class="hamburger-menu">
+                                    <div class="hamburger-menu-wrapper">
+                                        <div class="icons"></div>
+                                    </div>
+                                </div>
+                                <div class="navbar-header">
+                                    <div class="logo">
+                                        <a href="index.html" class="header-logo">
+                                            <img src="assets/images/logo/Suru.png" style="width: 0%;"
+                                                alt="logo" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <nav class="navigation">
+                                    <ul class="nav-links nav navbar-nav">
+                                        <li class="dropdown ">
+                                            <a href="index.html" class="main-menu">
+                                                <span class="text icons-dropdown">Home</span>
+                                                <span class="icons-dropdown">
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="tour-view.html" class="main-menu">
+                                                <span class="text icons-dropdown">Tour</span>
+                                                <span class="icons-dropdown">
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="explore.html" class="main-menu">
+                                                <span class="text icons-dropdown">Explore</span>
+                                                <span class="icons-dropdown">
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="covid19.html" class="main-menu">
+                                                <span class="text">Covid-19</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- WRAPPER-->
+            <div id="wrapper-content">
+                <!-- MAIN CONTENT-->
+                <div class="main-content">
+                    <section class="page-banner tour-view">
+                        <div class="container">
+                            <div class="page-title-wrapper">
+                                <div class="page-title-content">
+                                    <ol class="breadcrumb">
+                                        <li>
+                                            <a href="index.html" class="link home">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="tour-view.html" class="link">tour</a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="#" class="link">MySuru tour</a>
+                                        </li>
+                                    </ol>
+                                    <div class="clearfix"></div>
+                                    <h2 class="captions">MySuru Tour</h2>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="tour-view-main padding-top padding-bottom">
+                            <div class="container">
+                                <h2 class="title-style-2" >mysuru tour
+
+                                </h2>
+                                <div class="overview-block clearfix">
+                                    <h3 class="title-style-3">Tour Overview</h3>
+                                    <div class="timeline-container">
+                                        <div class="timeline">
+                                            <div class="timeline-block">
+                                                <div class="timeline-content medium-margin-top">
+                                                    <div class="row">
+                                                        <div class="timeline-point">
+                                                            <i class="fa fa-circle-o"></i>
+                                                        </div>
+                                                        <div class="timeline-custom-col content-col">
+                                                            <div class="timeline-location-block">
+                                                                <p class="location-name">Maharajah's Palace
+                                                                    <i class="fa fa-map-marker icon-marker"></i>
+                                                                </p>
+                                                                <p class="description">The Mysore Palace is a historical
+                                                                    palace and the royal residence at Mysore in the
+                                                                    Indian State of Karnataka. It is the official
+                                                                    residence of the Wadiyar dynasty and the seat of the
+                                                                    Kingdom of Mysore. The palace is in the centre of
+                                                                    Mysore, and faces the Chamundi Hills eastward.
+                                                                    Mysore is commonly described as the 'City of
+                                                                    Palaces', and there are seven palaces including this
+                                                                    one; however, 'Mysore Palace' refers specifically to
+                                                                    this one within the Old fort.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-custom-col image-col">
+                                                            <div class="timeline-image-block">
+                                                                <img src="assets/images/tour-view/timeline/palace.jpg"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-block">
+                                                <div class="timeline-content medium-margin-top">
+                                                    <div class="row">
+                                                        <div class="timeline-point">
+                                                            <i class="fa fa-circle-o"></i>
+                                                        </div>
+                                                        <div class="timeline-custom-col content-col">
+                                                            <div class="timeline-location-block">
+                                                                <p class="location-name">Brindavan Gardens
+                                                                    <i class="fa fa-map-marker icon-marker"></i>
+                                                                </p>
+                                                                <p class="description">The Brindavan Gardens, spread
+                                                                    over 60 acres, is located at a distance of 21 km
+                                                                    away from Mysore. Built across the notable river of
+                                                                    India, Cauvery, it took around five years to
+                                                                    complete the project. The well-synchronised fountain
+                                                                    show with music, boating and well-manicured grass
+                                                                    with flowerbeds are some of the top experiences of
+                                                                    Brindavan Garden.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-custom-col image-col">
+                                                            <div class="timeline-image-block">
+                                                                <img src="assets/images/tour-view/timeline/brindavan.jpg"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-block">
+                                                <div class="timeline-content medium-margin-top">
+                                                    <div class="row">
+                                                        <div class="timeline-point">
+                                                            <i class="fa fa-circle-o"></i>
+                                                        </div>
+                                                        <div class="timeline-custom-col content-col">
+                                                            <div class="timeline-location-block">
+                                                                <p class="location-name">Jaganmohan Palace
+                                                                    <i class="fa fa-map-marker icon-marker"></i>
+                                                                </p>
+                                                                <p class="description">Jaganmohan Palace is a palace in
+                                                                    the city of Mysore, India. Its construction was
+                                                                    completed in 1861 and was initially used by the
+                                                                    Wodeyars, kings of Mysore as their home (when the
+                                                                    present Mysore Palace (Amba Vilas Palace) was under
+                                                                    construction after the previous palace burned down).
+                                                                    It is now used as an art gallery and a function
+                                                                    hall. The palace is one of the seven palaces of the
+                                                                    royal city of Mysore.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-custom-col image-col">
+                                                            <div class="timeline-image-block">
+                                                                <img src="assets/images/tour-view/timeline/jaganmohan.jpg"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-block">
+                                                <div class="timeline-content medium-margin-top">
+                                                    <div class="row">
+                                                        <div class="timeline-point">
+                                                            <i class="fa fa-circle-o"></i>
+                                                        </div>
+                                                        <div class="timeline-custom-col content-col">
+                                                            <div class="timeline-location-block">
+                                                                <p class="location-name">MySuru Zoo
+                                                                    <i class="fa fa-map-marker icon-marker"></i>
+                                                                </p>
+                                                                <p class="description">One of the best zoological
+                                                                    gardens in India, it was established in the year
+                                                                    1892 by Maharaja Chamaraja Wodeyar for the royals
+                                                                    and handed over to the Department of Parks and
+                                                                    Gardens of the State Govt on attaining freedom.
+                                                                    Along with being home to various species of birds,
+                                                                    mammals and reptiles, this zoo also engages in
+                                                                    captive breeding of exotic and endangered species..
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-custom-col image-col">
+                                                            <div class="timeline-image-block">
+                                                                <img src="assets/images/tour-view/timeline/zoo.jpg"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-block">
+                                                <div class="timeline-content medium-margin-top">
+                                                    <div class="row">
+                                                        <div class="timeline-point">
+                                                            <i class="fa fa-circle-o"></i>
+                                                        </div>
+                                                        <div class="timeline-custom-col content-col">
+                                                            <div class="timeline-location-block">
+                                                                <p class="location-name">Chamundeshwari Temple
+                                                                    <i class="fa fa-map-marker icon-marker"></i>
+                                                                </p>
+                                                                <p class="description">The Chamundeshwari Temple is a
+                                                                    traditional Hindu temple located on the eastern edge
+                                                                    of Mysore at the height of 1000ft on the Chamundi
+                                                                    hills. Dedicated to and named after goddess Durga,
+                                                                    the temple also has statues of Nandi and
+                                                                    Mahishasura, the demon. Being one of the oldest
+                                                                    temples in the palace city of Mysore, the temple is
+                                                                    a must-visit attraction for the travellers. The
+                                                                    Chamundeshwari Temple is considered as a Shakti
+                                                                    Peetha and is one among the 18 Maha Shakti Peethas.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-custom-col image-col">
+                                                            <div class="timeline-image-block">
+                                                                <img src="assets/images/tour-view/timeline/chamundeshwari.jpg"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-block">
+                                                <div class="timeline-content medium-margin-top">
+                                                    <div class="row">
+                                                        <div class="timeline-point">
+                                                            <i class="fa fa-circle-o"></i>
+                                                        </div>
+                                                        <div class="timeline-custom-col content-col">
+                                                            <div class="timeline-location-block">
+                                                                <p class="location-name">Bonsai Garden
+                                                                    <i class="fa fa-map-marker icon-marker"></i>
+                                                                </p>
+                                                                <p class="description">One of the more unique
+                                                                    attractions of the Royal Mysore, the Bonsai Garden
+                                                                    of Mysore is home to over a 100 different varieties
+                                                                    of Bonsai trees spread across this vast estate. It
+                                                                    is a part of the Avadoota Datta Peetham of the Sri
+                                                                    Ganapathi Sachidananda Ashrama. Initially a pet
+                                                                    project by the fascinated Swamiji, the garden now
+                                                                    hosts 450 miniature tree across an area of 4 acres,
+                                                                    filled with these quirky dwarf trees. The beauty of
+                                                                    the garden is accentuated by the stream that flows
+                                                                    within, as well as the placement of Buddha statues
+                                                                    and monkey statues around the area, representative
+                                                                    of the zen culture from where the art of Bonsai was
+                                                                    evolved. There is also a deer park to cater to the
+                                                                    nature lovers who visit.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-custom-col image-col">
+                                                            <div class="timeline-image-block">
+                                                                <img src="assets/images/tour-view/timeline/bonsai.jpg"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-block">
+                                                <div class="timeline-content medium-margin-top">
+                                                    <div class="row">
+                                                        <div class="timeline-point">
+                                                            <i class="fa fa-circle-o"></i>
+                                                        </div>
+                                                        <div class="timeline-custom-col content-col">
+                                                            <div class="timeline-location-block">
+                                                                <p class="location-name">Karanji Lake
+                                                                    <i class="fa fa-map-marker icon-marker"></i>
+                                                                </p>
+                                                                <p class="description">Karanji Lake placed in Mysore
+                                                                    Karnataka, is surrounded by a nature park comprising
+                                                                    of a butterfly park and an aviary which is the
+                                                                    biggest 'walk-through aviary' in India. Also a
+                                                                    museum named, the Regional Museum of Natural History
+                                                                    is placed on the banks of this lake. The area over
+                                                                    which the Karanji lake spans is of 90 hectares. On
+                                                                    one hand, the foreshore area covers about 35
+                                                                    hectares waterspread area is about 55 hectares, the
+                                                                    foreshore area measures about 35 hectares.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-custom-col image-col">
+                                                            <div class="timeline-image-block">
+                                                                <img src="assets/images/tour-view/timeline/karanji.jpg"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-block">
+                                                <div class="timeline-content medium-margin-top">
+                                                    <div class="row">
+                                                        <div class="timeline-point">
+                                                            <i class="fa fa-circle-o"></i>
+                                                        </div>
+                                                        <div class="timeline-custom-col content-col">
+                                                            <div class="timeline-location-block">
+                                                                <p class="location-name">City Shopping
+                                                                    <i class="fa fa-map-marker icon-marker"></i>
+                                                                </p>
+                                                                <p class="description">Shopping is a proven medicine for
+                                                                    the minds of an explorer. If you are heading to
+                                                                    Mysore over the weekend, well, you are lucky to be
+                                                                    heading to an extravagant shopping destination.
+                                                                    Famous for its silk sarees, rosewood artefacts,
+                                                                    sandalwood products, coffee powder, to name a few,
+                                                                    Mysore is nothing less than a blessing for the
+                                                                    shopaholic in you. Famous for its rich cultural
+                                                                    heritage, the city is located 143 km away from
+                                                                    Bengaluru.Whether you want to relish the infamous
+                                                                    Mysore Pak or wish to take back home rock sculptures
+                                                                    as souvenirs for friends and family, Mysore offers a
+                                                                    splendid shopping experience.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-custom-col image-col">
+                                                            <div class="timeline-image-block">
+                                                                <img src="assets/images/tour-view/timeline/cityshoping.jpg"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="wrapper-btn margin-top70">
+                                <a href="#" class="btn btn-maincolor btn-book-tour">book now</a>
+                            </div> -->
+                            <div class="timeline-book-block book-tour">
+                                <div class="find-widget find-hotel-widget widget new-style">
+                                    <h4 class="title-widgets">BOOK ROOM</h4>
+                                    <form class="content-widget">
+                                        <div class="text-input small-margin-top">
+                                            <div class="input-daterange">
+                                                <div class="text-box-wrapper half">
+                                                    <label class="tb-label">Check in</label>
+                                                    <div class="input-group">
+                                                        <input type="text" placeholder="MM/DD/YY" class="tb-input">
+                                                        <i class="tb-icon fa fa-calendar input-group-addon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="text-box-wrapper half">
+                                                    <label class="tb-label">Check out</label>
+                                                    <div class="input-group">
+                                                        <input type="text" placeholder="MM/DD/YY" class="tb-input">
+                                                        <i class="tb-icon fa fa-calendar input-group-addon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="count adult-count text-box-wrapper">
+                                                <label class="tb-label">Adult</label>
+                                                <div class="select-wrapper">
+                                                    <!--i.fa.fa-chevron-down-->
+                                                    <select class="form-control custom-select selectbox">
+                                                        <option selected="selected">1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="count child-count text-box-wrapper">
+                                                <label class="tb-label">Child</label>
+                                                <div class="select-wrapper">
+                                                    <!--i.fa.fa-chevron-down-->
+                                                    <select class="form-control custom-select selectbox">
+                                                        <option selected="selected">0</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="first-name text-box-wrapper">
+                                                <label class="tb-label">Your First Name</label>
+                                                <div class="input-group">
+                                                    <input type="text" placeholder="Write your first name"
+                                                        class="tb-input">
+                                                </div>
+                                            </div>
+                                            <div class="last-name text-box-wrapper">
+                                                <label class="tb-label">Your Last Name</label>
+                                                <div class="input-group">
+                                                    <input type="text" placeholder="Write your last name"
+                                                        class="tb-input">
+                                                </div>
+                                            </div>
+                                            <div class="email text-box-wrapper">
+                                                <label class="tb-label">Your Email</label>
+                                                <div class="input-group">
+                                                    <input type="email" placeholder="Write your email address"
+                                                        class="tb-input">
+                                                </div>
+                                            </div>
+                                            <div class="phone text-box-wrapper">
+                                                <label class="tb-label">Your Number Phone</label>
+                                                <div class="input-group">
+                                                    <input type="text" placeholder="Write your number phone"
+                                                        class="tb-input">
+                                                </div>
+                                            </div>
+                                            <div class="place text-box-wrapper">
+                                                <label class="tb-label">Where are your address?</label>
+                                                <div class="input-group">
+                                                    <input type="text" placeholder="Write your address"
+                                                        class="tb-input">
+                                                </div>
+                                            </div>
+                                            <div class="note text-box-wrapper">
+                                                <label class="tb-label">Note:</label>
+                                                <div class="input-group">
+                                                    <textarea placeholder="Write your note" rows="3" name="content"
+                                                        class="tb-input"></textarea>
+                                                </div>
+                                            </div>
+                                            <button type="submit" data-hover="SEND REQUEST" class="btn btn-slide">
+                                                <span class="text">BOOK Now</span>
+                                                <span class="icons fa fa-long-arrow-right"></span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-block margin-top70">
+                            <div class="container">
+                                <h3 class="title-style-2">Gallery</h3>
+                                <div class="grid">
+                                    <div class="grid-sizer"></div>
+                                    <div class="gutter-sizer"></div>
+                                    <div class="grid-item grid-item--big">
+                                        <div class="gallery-image">
+                                            <a href="assets/images/tour-view/grid-images/fancybox-1.jpg"
+                                                data-fancybox-group="gallery" class="title-hover dh-overlay fancybox">
+                                                <i class="icons fa fa-eye"></i>
+                                            </a>
+                                            <div class="bg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item grid-item--medium">
+                                        <div class="gallery-image">
+                                            <a href="assets/images/tour-view/grid-images/fancybox-2.jpg"
+                                                data-fancybox-group="gallery" class="title-hover dh-overlay fancybox">
+                                                <i class="icons fa fa-eye"></i>
+                                            </a>
+                                            <div class="bg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item img-small pdr">
+                                        <div class="gallery-image">
+                                            <a href="assets/images/tour-view/grid-images/fancybox-3.jpg"
+                                                data-fancybox-group="gallery" class="title-hover dh-overlay fancybox">
+                                                <i class="icons fa fa-eye"></i>
+                                            </a>
+                                            <div class="bg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item img-small pdl">
+                                        <div class="gallery-image">
+                                            <a href="assets/images/tour-view/grid-images/fancybox-4.jpg"
+                                                data-fancybox-group="gallery" class="title-hover dh-overlay fancybox">
+                                                <i class="icons fa fa-eye"></i>
+                                            </a>
+                                            <div class="bg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item grid-item--width2">
+                                        <div class="gallery-image">
+                                            <a href="assets/images/tour-view/grid-images/fancybox-5.jpg"
+                                                data-fancybox-group="gallery" class="title-hover dh-overlay fancybox">
+                                                <i class="icons fa fa-eye"></i>
+                                            </a>
+                                            <div class="bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <!-- <div class="expert-block padding-top">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 col-xs-12">
+                                        <h3 class="title-style-2">TALK TO OUR explore EXPERT</h3>
+                                        <p>We're here to chat about your next big idea.</p>
+                                        <ul class="nav list-time">
+                                            <li>
+                                                <span class="time">
+                                                    <i class="fa fa-long-arrow-right"></i>7 am - 4 pm Monday through
+                                                    Thursday.</span>
+                                            </li>
+                                            <li>
+                                                <span class="time">
+                                                    <i class="fa fa-long-arrow-right"></i>7 am to 1 pm Fridays (US
+                                                    central) toll free or by skype.</span>
+                                            </li>
+                                        </ul>
+                                        <p>Otherwise, email us anytime. On average we provide quotes within 6 hours
+                                            during business hours and the next day during off business hours.</p>
+                                        <p>Privately guided trips allow you to be in control of all the details of
+                                            your trip - departure times, accommodations, extra nights, extra
+                                            activities, extra experiences - what you want and how you want it.</p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-xs-12">
+                                        <div class="about-us-wrapper">
+                                            <div class="avatar">
+                                                <div class="image-wrapper">
+                                                    <img src="assets/images/tour-view/avatar.jpg" alt=""
+                                                        class="img img-responsive">
+                                                </div>
+                                                <div class="content-wrapper">
+                                                    <p class="name">Peter Wilson</p>
+                                                    <p class="position">Commercial Director</p>
+                                                </div>
+                                            </div>
+                                            <div class="row group-list contact-list">
+                                                <div class="col-sm-4 col-xs-4 col-contact">
+                                                    <div class="media contact-list-media">
+                                                        <div class="media-left">
+                                                            <a href="#" class="icons">
+                                                                <i class="fa fa-desktop"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="media-right">
+                                                            <a href="#" class="title">Contact Skype</a>
+                                                            <p class="text">peter.wilson</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4 col-xs-4 col-contact">
+                                                    <div class="media contact-list-media">
+                                                        <div class="media-left">
+                                                            <a href="#" class="icons">
+                                                                <i class="fa fa-phone"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="media-right">
+                                                            <a href="#" class="title">Phone</a>
+                                                            <p class="text">+1 (324) 317-8887</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4 col-xs-4 col-contact">
+                                                    <div class="media contact-list-media">
+                                                        <div class="media-left">
+                                                            <a href="#" class="icons">
+                                                                <i class="fa fa-envelope-o"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="media-right">
+                                                            <a href="#" class="title">Email</a>
+                                                            <p class="text">peter.wilson@gmail.com</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="special-offer new-style margin-top70">
+                                <h3 class="title-style-2">You Will Also Like</h3>
+                                <div class="special-offer-list" style="padding-bottom:3% ;">
+                                    <div class="special-offer-layout">
+                                        <div class="image-wrapper">
+                                            <a href="tour-view.html" class="link">
+                                                <img src="assets/images/footer/offer-1.jpg" alt=""
+                                                    class="img-responsive">
+                                            </a>
+                                            <div class="title-wrapper">
+                                                <a href="tour-view.html" class="title">Banglore</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                    <div class="special-offer-layout">
+                                        <div class="image-wrapper">
+                                            <a href="tour-view.html" class="link">
+                                                <img src="assets/images/footer/offer-2.jpg" alt=""
+                                                    class="img-responsive">
+                                            </a>
+                                            <div class="title-wrapper">
+                                                <a href="tour-view.html" class="title">Manglore</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="special-offer-layout">
+                                        <div class="image-wrapper">
+                                            <a href="tour-view.html" class="link">
+                                                <img src="assets/images/footer/offer-3.jpg" alt=""
+                                                    class="img-responsive">
+                                            </a>
+                                            <div class="title-wrapper">
+                                                <a href="tour-view.html" class="title">Nagarhole Net. Park</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="special-offer-layout">
+                                        <div class="image-wrapper">
+                                            <a href="tour-view.html" class="link">
+                                                <img src="assets/images/footer/offer-4.jpg" alt=""
+                                                    class="img-responsive">
+                                            </a>
+                                            <div class="title-wrapper">
+                                                <a href="tour-view.html" class="title">Madikeri</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="special-offer-layout">
+                                        <div class="image-wrapper">
+                                            <a href="tour-view.html" class="link">
+                                                <img src="assets/images/footer/offer-1.jpg" alt=""
+                                                    class="img-responsive">
+                                            </a>
+                                            <div class="title-wrapper">
+                                                <a href="tour-view.html" class="title">Hampi</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="special-offer-layout">
+                                        <div class="image-wrapper">
+                                            <a href="tour-view.html" class="link">
+                                                <img src="assets/images/footer/offer-2.jpg" alt=""
+                                                    class="img-responsive">
+                                            </a>
+                                            <div class="title-wrapper">
+                                                <a href="tour-view.html" class="title">Chikmangalur</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="special-offer-layout">
+                                        <div class="image-wrapper">
+                                            <a href="tour-view.html" class="link">
+                                                <img src="assets/images/footer/offer-3.jpg" alt=""
+                                                    class="img-responsive">
+                                            </a>
+                                            <div class="title-wrapper">
+                                                <a href="tour-view.html" class="title">Halebeedu</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="special-offer-layout">
+                                        <div class="image-wrapper">
+                                            <a href="tour-view.html" class="link">
+                                                <img src="assets/images/footer/offer-4.jpg" alt=""
+                                                    class="img-responsive">
+                                            </a>
+                                            <div class="title-wrapper">
+                                                <a href="tour-view.html" class="title">Murdeshwar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </section>
+            </div>
+            <!-- BUTTON BACK TO TOP-->
+            <div id="back-top">
+                <a href="#top" class="link">
+                    <i class="fa fa-angle-double-up"></i>
+                </a>
+            </div>
+        </div>
+        <!-- FOOTER-->
+        <footer>
+            <div class="footer-main padding-top padding-bottom">
+                <div class="container">
+                    <div class="footer-main-wrapper">
+                        <a href="index.html" class="logo-footer">
+                            <img src="assets/images/logo/Suru.png" alt="" class="img-responsive" />
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="hyperlink">
+                <div class="container">
+
+                    <div class="social-footer" style="padding-top: 20px;">
+                        <ul class="list-inline list-unstyled">
+                            <li>
+                                <a href="#" class="link facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link pinterest">
+                                    <i class="fa fa-pinterest-p"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link google">
+                                    <i class="fa fa-google"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="name-company"> Designed by <a href="https://www.linkedin.com/in/nand-patel-240876159/"
+                            target="_blank">Nand</a> & <a
+                            href="https://www.linkedin.com/in/harsh-prajapati-1780921aa/" target="_blank">Harsh</a></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+    <!-- LIBRARY JS-->
+    <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/libs/detect-browser/browser.js"></script>
+    <script src="assets/libs/smooth-scroll/jquery-smoothscroll.js"></script>
+    <script src="assets/libs/wow-js/wow.min.js"></script>
+    <script src="assets/libs/slick-slider/slick.min.js"></script>
+    <script src="assets/libs/selectbox/js/jquery.selectbox-0.2.js"></script>
+    <script src="assets/libs/please-wait/please-wait.min.js"></script>
+    <script src="assets/libs/fancybox/js/jquery.fancybox.js"></script>
+    <script src="assets/libs/fancybox/js/jquery.fancybox-buttons.js"></script>
+    <script src="assets/libs/fancybox/js/jquery.fancybox-thumbs.js"></script>
+    <!--script(src="assets/libs/parallax/jquery.data-parallax.min.js")-->
+    <!-- MAIN JS-->
+    <script src="assets/js/main.js"></script>
+    <!-- LOADING JS FOR PAGE-->
+    <script src="assets/js/pages/tour-view.js"></script>
+    <script src="assets/libs/isotope/isotope.min.js"></script>
+    <script src="assets/libs/fancybox/js/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script src="assets/libs/fancybox/js/jquery.fancybox.js"></script>
+    <script src="assets/libs/fancybox/js/jquery.fancybox-buttons.js"></script>
+    <script src="assets/libs/fancybox/js/jquery.fancybox-thumbs.js"></script>
+    <script src="assets/libs/mouse-direction-aware/jquery.directional-hover.js"></script>
+    <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        var logo_str = 'assets/images/logo/mysuruLanding.png';
+        if (Cookies.set('color-skin')) {
+            logo_str = 'assets/images/logo/logo-black-' + Cookies.set('color-skin') + '.png';
+        }
+        window.loading_screen = window.pleaseWait(
+            {
+                logo: logo_str,
+                backgroundColor: '#fff',
+                loadingHtml: "<div class='spinner sk-spinner-wave'><div class='rect1'></div><div class='rect2'></div><div class='rect3'></div><div class='rect4'></div><div class='rect5'></div></div>",
+            });
+    </script>
+</body>
+
+<!-- Mirrored from swlabs.co/exploore/tour-view.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Dec 2020 06:08:10 GMT -->
+
+</html>
